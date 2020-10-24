@@ -19,7 +19,7 @@ let startTratatata = () => {
   let firstBox = unchecked[randomNumber]
   checked.push(firstBox)
   unchecked.splice(randomNumber, 1)
-  
+
   randomNumber = Math.floor(Math.random() * 15)
   let secondBox = unchecked[randomNumber]
   checked.push(secondBox)
@@ -44,7 +44,7 @@ let startTratatata = () => {
 let uncheck = (ctx) => {
   let id = ctx.id
   let inUnchecked = unchecked.includes(id)
-  if( inUnchecked ) {
+  if (inUnchecked) {
     gameOver()
   } else {
     unchecked.push(id)
@@ -52,7 +52,7 @@ let uncheck = (ctx) => {
     createNewCheck()
     score += 5
   }
-  if( (Date.now() - startTime) / 1000 > 30  ){
+  if ((Date.now() - startTime) / 1000 > 30) {
     gameOver()
   }
 }

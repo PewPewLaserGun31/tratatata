@@ -1,0 +1,59 @@
+input[type='checkbox'].checkb {
+  border-radius: 10%;
+  height: 20vh;
+  width: 20vh;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -o-appearance: none;
+  box-shadow: none;
+  background-color: #E9c46A;
+  border: 0.2vw solid;
+  border-color: #E76F51;
+  outline: none;
+
+  transition-property: background-color, border-radius;
+  transition-duration: 0.3s;
+  transition-timing-function: linear;
+}
+
+input[type='checkbox'].checkb:hover {
+  background-color: #E76F51;
+}
+
+input[type='checkbox'].checkb:checked {
+  background-color: #F4a261;
+}
+
+.ScoreText {
+  margin-top: 0;
+  font-family: 'Syne Tactile', cursive;
+  color: white;
+  font-size: 2vw;
+}
+
+button.playbutton {
+  background-color: #2a9d8f;
+  display: inline-block;
+  color: white;
+  font-size: 1.4vw;
+  font-family: 'Syne Tactile', cursive;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 0.2vw solid;
+  border-radius: 20px;
+  transition: 0.2s;
+  width: 20vh;
+  height: 10vh;
+  margin-left: 10%;
+}
+
+button.playbutton:hover {
+  background: rgba(255, 255, 255, .2);
+}
+
+button.playbutton:active {
+  background: white;
+}

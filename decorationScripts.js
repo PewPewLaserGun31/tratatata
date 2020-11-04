@@ -1,27 +1,27 @@
 $(document).ready(function () {
     document.location.href = "#zatemnenie";
-  });
+});
 
-  function CloseMenu(awakeButton) {
+function CloseMenu(awakeButton) {
     $(awakeButton).parent().fadeOut(500, unwrapSquares);
-  }
+}
 
-  function unwrapSquares() {
+function unwrapSquares() {
     let checkboxes = $(".checkb");
     let width = checkboxes.css("width");
     checkboxes.animate({
-      height: width
+        height: width
     }, {
-      duration: 1000
+        duration: 1000
     });
     document.location.href = "#";
-  }
+}
 
 
-  function ProgressBarAnimation(duration) {
+function ProgressBarAnimation(duration) {
     $(".progress-bar2").animate({
-      width: 0
+        width: 0
     }, {
-      duration: duration
+        duration: duration
     });
-  }
+}

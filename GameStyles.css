@@ -1,8 +1,6 @@
-
-
 input[type='checkbox'].checkb {
   border-radius: 10%;
-  width:99%;
+  width: 99%;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -16,11 +14,11 @@ input[type='checkbox'].checkb {
   margin: 0;
 
   transition-property: background-color, border-radius;
-  transition-duration: 0.1s;
+  transition-duration: 0.2s;
   transition-timing-function: linear;
 }
 
-input[type='checkbox'].checkb:hover{
+input[type='checkbox'].checkb:hover {
   border-radius: 5%;
 }
 
@@ -43,6 +41,7 @@ input[type='checkbox'].checkb:checked {
   font-family: 'Syne Tactile', cursive;
   color: white;
   font-size: 2vw;
+  text-align: start;
 }
 
 button.playbutton {
@@ -70,4 +69,9 @@ button.playbutton:hover {
 
 button.playbutton:active {
   background: white;
+}
+
+.sidepanel {
+  width: 15%;
+  vertical-align: top;
 }

@@ -15,6 +15,7 @@ let startTratatata = () => {
   score = 0
   startTime = Date.now()
 
+  $(".progress-bar2").css("width", "100%")
   ProgressBarAnimation(30000)
 
   let randomNumber = Math.floor(Math.random() * 16)

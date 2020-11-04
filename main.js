@@ -15,6 +15,8 @@ let startTratatata = () => {
   score = 0
   startTime = Date.now()
 
+  ProgressBarAnimation(30000)
+
   let randomNumber = Math.floor(Math.random() * 16)
   let firstBox = unchecked[randomNumber]
   checked.push(firstBox)
@@ -51,6 +53,7 @@ let uncheck = (ctx) => {
     checked.splice(checked.indexOf(id), 1)
     createNewCheck()
     score += 5
+    $('#score').text(`${score}`)
   }
   if ((Date.now() - startTime) / 1000 > 30) {
     gameOver()
@@ -79,4 +82,5 @@ let uncheckAll = () => {
 let gameOver = () => {
   alert(`Game over
   your score: ${score}`)
+  $(".progress-bar2").css("width", 0)
 }

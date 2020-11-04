@@ -84,5 +84,7 @@ let gameOver = () => {
   alert(`Game over
   your score: ${score}`)
   $(".progress-bar2").stop();
-  $(".progress-bar2").css("width", 0)
+  $(".progress-bar2").css("width", 0);
+  $('#score').text(`0`)
+
 }

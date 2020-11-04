@@ -20,6 +20,10 @@ input[type='checkbox'].checkb {
   transition-timing-function: linear;
 }
 
+input[type='checkbox'].checkb:hover{
+  border-radius: 5%;
+}
+
 table.playTable {
   margin: auto;
   width: 100%;

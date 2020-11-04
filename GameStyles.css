@@ -1,7 +1,8 @@
+
+
 input[type='checkbox'].checkb {
   border-radius: 10%;
-  height: 20vh;
-  width: 20vh;
+  width:99%;
   appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -12,17 +13,25 @@ input[type='checkbox'].checkb {
   border-color: #E76F51;
   outline: none;
 
+  margin: 0;
+
   transition-property: background-color, border-radius;
-  transition-duration: 0.3s;
+  transition-duration: 0.1s;
   transition-timing-function: linear;
 }
 
-input[type='checkbox'].checkb:hover {
-  background-color: #E76F51;
+table.playTable {
+  margin: auto;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #264653;
 }
 
 input[type='checkbox'].checkb:checked {
-  background-color: #F4a261;
+  background-color: #E76F51;
 }
 
 .ScoreText {
@@ -33,20 +42,21 @@ input[type='checkbox'].checkb:checked {
 }
 
 button.playbutton {
+  margin: auto;
   background-color: #2a9d8f;
   display: inline-block;
   color: white;
-  font-size: 1.4vw;
+  font-size: 2vw;
   font-family: 'Syne Tactile', cursive;
   text-decoration: none;
   user-select: none;
   padding: .5em 2em;
   outline: none;
-  border: 0.2vw solid;
+  border: 3px solid;
   border-radius: 20px;
   transition: 0.2s;
-  width: 20vh;
-  height: 10vh;
+  width: 14vw;
+  height: 7vw;
   margin-left: 10%;
 }
 
